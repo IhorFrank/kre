@@ -4,7 +4,7 @@ Task 1
 
 
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Введите Сколько вывести случайных чисел ");
+        System.out.print("Enter Ramdom numbers ");
         int number = scanner.nextInt();
         int a = 0;
         int c = 200;
