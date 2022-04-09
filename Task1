@@ -3,14 +3,15 @@ Task 1
 на новую строку.
 
 
-Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Введите Сколько вывести случайных чисел ");
         String chislo = scanner.next();
         int a = 0;
+        int c = 200;
         int b = Integer.parseInt(chislo);
         for (int i=0; i<b; i++){
-            int rezultat = a+(int) (Math.random()*b);
-            System.out.print (" "rezultat);
+            int rezultat = a+(int) (Math.random()*c);
+           // System.out.print (" " + rezultat);
             System.out.println(rezultat);
 
 Task 2 
