@@ -1,6 +1,8 @@
 Task 1 
 Вывести заданное количество случайных чисел с переходом и без перехода
 на новую строку.
+
+
 Scanner scanner = new Scanner(System.in);
         System.out.print("Введите Сколько вывести случайных чисел ");
         String chislo = scanner.next();
@@ -13,6 +15,8 @@ Scanner scanner = new Scanner(System.in);
 
 Task 2 
 Ввести пароль из командной строки и сравнить его со строкой-образцом.
+
+
  Scanner scanner = new Scanner(System.in);
         System.out.print("Your password : ");
         String password1 = scanner.next();
