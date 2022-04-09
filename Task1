@@ -1,0 +1,8 @@
+ Scanner scanner = new Scanner(System.in);
+        System.out.print("Введите Сколько вывести случайных чисел ");
+        String chislo = scanner.next();
+        int a = 0;
+        int b = Integer.parseInt(chislo);
+        for (int i=0; i<b; i++){
+            int rezultat = a+(int) (Math.random()*b);
+            System.out.println(rezultat);
