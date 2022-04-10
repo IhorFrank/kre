@@ -1,6 +1,6 @@
 Task 1 
-Вывести заданное количество случайных чисел с переходом и без перехода
-на новую строку.
+//Вывести заданное количество случайных чисел с переходом и без перехода
+//на новую строку.
 
 
         Scanner scanner = new Scanner(System.in);
@@ -15,7 +15,7 @@ Task 1
             System.out.println(rezultat);
 
 Task 2 
-Ввести пароль из командной строки и сравнить его со строкой-образцом.
+//Ввести пароль из командной строки и сравнить его со строкой-образцом.
 
 
  Scanner scanner = new Scanner(System.in);
@@ -29,8 +29,8 @@ Task 2
 
 
 Task 3
-Ввести целые числа как аргументы командной строки, подсчитать их сум-
-мы (произведения) и вывести результат на консоль.
+//Ввести целые числа как аргументы командной строки, подсчитать их сум-
+//мы (произведения) и вывести результат на консоль.
 
   Scanner scanner = new Scanner(System.in);
         System.out.println ("Enter 2 numbers : ");
@@ -38,3 +38,59 @@ Task 3
         int number2 = scanner.nextInt();
         System.out.println("Sum :"+number1 + number2);
         System.out.println("Multi :"+number1*number2);
+        
+ Task 4 
+ 
+ //Ввести с консоли n целых чисел. На консоль вывести:
+ 
+ 
+    System.out.print("Enter numb : ");
+        Scanner scanner = new Scanner(System.in);
+        int size = scanner.nextInt();
+        int[] chisla = new int[size];
+        System.out.print(" Enter nubs ");
+        int max = chisla[0];
+        int min = chisla[0];
+        for (int i = 0; i < size; i++){
+            chisla[i] = scanner.nextInt();
+         }
+
+//1. Четные и нечетные числа.
+
+        for (int i = 0; i<size; i++) {
+            if (chisla[i] % 2 != 0) {
+                System.out.println("Ne parnui chisla :" + chisla[i]);
+            } else if (chisla[i] % 2 == 0) {
+                System.out.println("Parnue chisla :" + chisla[i]);
+            }
+        }
+
+
+//2. Наибольшее и наименьшее число.
+
+
+        for (int i = 0; i < size; i++)
+         if (max < chisla[i])
+         max = chisla[i];
+        System.out.println("Max chislo : "+ max);
+
+        for (int i = 0; i < size; i++)
+         if (min > chisla[i])
+         min = chisla[i];
+        System.out.println("Min chislo : " + min);
+
+
+//3. Числа, которые делятся на 3 или на 9.
+
+        for (int i = 0; i < size; i++)
+            if (chisla[i]%3 ==0)
+                System.out.println("Kratnue 3 ili 9 :" + chisla[i]);
+//4. Числа, которые делятся на 5 и на 7.
+        for (int i =0; i <size; i++)
+            if (chisla[i]%5 == 0 || chisla[i]%7==0)
+                System.out.println("Delayatsa na 5 i 7 : " + chisla[i]);
+
+
+ 
+
+
