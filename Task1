@@ -60,7 +60,7 @@ Task 3
         for (int i = 0; i<size; i++) {
             if (chisla[i] % 2 != 0) {
                 System.out.println("Ne parnui chisla :" + chisla[i]);
-            } else if (chisla[i] % 2 == 0) {
+            } else {
                 System.out.println("Parnue chisla :" + chisla[i]);
             }
         }
