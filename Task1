@@ -15,11 +15,11 @@ public static void main(String[] args) {
 
         for (int i = 0; i<size; i++) {
             if (chisla[i] % 2 != 0) {
-                System.out.println("Ne parnui chisla :" + chisla[i] +" ");
+                System.out.println("Ne parnui chisla :" + chisla[i]);
 
             }
             else {
-                System.out.println("Parnue chisla :" + chisla[i]+ " ");
+                System.out.println("Parnue chisla :" + chisla[i]);
             }
         }
 
