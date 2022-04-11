@@ -55,16 +55,16 @@ public static void main(String[] args) {
 
 
             boolean sorted = false;
-            int sravnenie;
+            int obmen;
             while (!sorted) {
                 sorted = true;
                 for (int i = 0; i < chisla.length-1 ; i++) {
                     if (chisla[i] < chisla[i + 1]) {
                         sorted = false;
 
-                        sravnenie = chisla[i];
+                        obmen = chisla[i];
                         chisla[i] = chisla[i + 1];
-                        chisla[i + 1] = sravnenie;
+                        chisla[i + 1] = obmen;
 
                     }
                 }
