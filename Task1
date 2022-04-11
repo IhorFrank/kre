@@ -59,7 +59,7 @@ public static void main(String[] args) {
             while (!sorted) {
                 sorted = true;
                 for (int i = 0; i < chisla.length-1 ; i++) {
-                    if (chisla[i] > chisla[i + 1]) {
+                    if (chisla[i] < chisla[i + 1]) {
                         sorted = false;
 
                         sravnenie = chisla[i];
