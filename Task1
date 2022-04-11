@@ -1,79 +1,38 @@
 Task 1 
-//Вывести заданное количество случайных чисел с переходом и без перехода
-//на новую строку.
-
-
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter Ramdom numbers ");
-        int number = scanner.nextInt();
-        int a = 0;
-        int c = 200;
-        int b = number;
-        for (int i=0; i<b; i++){
-            int rezultat = a+(int) (Math.random()*c);
-           // System.out.print (" " + rezultat);
-            System.out.println(rezultat);
-
-Task 2 
-//Ввести пароль из командной строки и сравнить его со строкой-образцом.
-
-
- Scanner scanner = new Scanner(System.in);
-        System.out.print("Your password : ");
-        String password1 = scanner.next();
-        String password2 = "Password";
-        if (password1.equals(password2))
-            System.out.println("Password ok");
-        else
-            System.out.println("Password wrong");
-
-
-Task 3
-//Ввести целые числа как аргументы командной строки, подсчитать их сум-
-//мы (произведения) и вывести результат на консоль.
-
-  Scanner scanner = new Scanner(System.in);
-        System.out.println ("Enter 2 numbers : ");
-        int number1 = scanner.nextInt();
-        int number2 = scanner.nextInt();
-        System.out.println("Sum :"+number1 + number2);
-        System.out.println("Multi :"+number1*number2);
-        
- Task 4 
- 
- //Ввести с консоли n целых чисел. На консоль вывести:
- 
- 
-    System.out.print("Enter numb : ");
+public static void main(String[] args) {
+        System.out.print("Enter numb : ");
         Scanner scanner = new Scanner(System.in);
         int size = scanner.nextInt();
         int[] chisla = new int[size];
         System.out.print(" Enter nubs ");
-        int max = chisla[0];
-        int min = chisla[0];
+
+
         for (int i = 0; i < size; i++){
             chisla[i] = scanner.nextInt();
          }
-
+//Ввести с консоли n целых чисел. На консоль вывести:
 //1. Четные и нечетные числа.
 
         for (int i = 0; i<size; i++) {
             if (chisla[i] % 2 != 0) {
-                System.out.println("Ne parnui chisla :" + chisla[i]);
-            } else {
-                System.out.println("Parnue chisla :" + chisla[i]);
+                System.out.println("Ne parnui chisla :" + chisla[i] +" ");
+
+            }
+            else {
+                System.out.println("Parnue chisla :" + chisla[i]+ " ");
             }
         }
 
-
 //2. Наибольшее и наименьшее число.
-
+        int max = chisla[0];
+        int min = chisla[0];
 
         for (int i = 0; i < size; i++)
          if (max < chisla[i])
          max = chisla[i];
         System.out.println("Max chislo : "+ max);
 
+        
         for (int i = 0; i < size; i++)
          if (min > chisla[i])
          min = chisla[i];
@@ -85,12 +44,34 @@ Task 3
         for (int i = 0; i < size; i++)
             if (chisla[i]%3 ==0)
                 System.out.println("Kratnue 3 ili 9 :" + chisla[i]);
+
+
 //4. Числа, которые делятся на 5 и на 7.
         for (int i =0; i <size; i++)
-            if (chisla[i]%5 == 0 || chisla[i]%7==0)
+            if (chisla[i]%5 == 0 && chisla[i]%7==0)
                 System.out.println("Delayatsa na 5 i 7 : " + chisla[i]);
 
+ //5. Элементы, расположенные методом пузырька по убыванию модулей.
 
+
+            boolean sorted = false;
+            int sravnenie;
+            while (!sorted) {
+                sorted = true;
+                for (int i = 0; i < chisla.length-1 ; i++) {
+                    if (chisla[i] > chisla[i + 1]) {
+                        sorted = false;
+
+                        sravnenie = chisla[i];
+                        chisla[i] = chisla[i + 1];
+                        chisla[i + 1] = sravnenie;
+
+                    }
+                }
+            }System.out.println("Puzuri :" + Arrays.toString(chisla));
+
+        }
+    }
  
 
 
