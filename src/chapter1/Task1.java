@@ -7,7 +7,7 @@ public class Task1 {
     public static void main(String[] args) {
 
         OddEvenNumbersPrinter.printNumbers();
-
+// sdsdcscscas
 
         /*System.out.print("Enter number quantity: ");
         Scanner scanner = new Scanner(System.in);
