@@ -13,15 +13,19 @@ public class OddEvenNumbersPrinter {
             else evenNumbers.add(number);
         }
 
-        System.out.println("Odd numbers: ");
+        System.out.print("Odd numbers: ");
         for (Integer oddNumber : oddNumbers) {
-            System.out.print(oddNumber + ", ");
-        }
+            System.out.print(oddNumber + " ");
 
-        System.out.println("Even numbers: ");
-        for (Integer evenNumber : evenNumbers) {
-            System.out.println(evenNumber + ", ");
         }
+        System.out.println();
+
+        System.out.print("Even numbers: ");
+        for (Integer evenNumber : evenNumbers) {
+            System.out.print(evenNumber + " ");
+
+        }
+        System.out.println();
     }
 
     private static boolean isOdd(int numbers) {

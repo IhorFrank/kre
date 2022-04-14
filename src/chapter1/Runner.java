@@ -14,6 +14,9 @@ public class Runner {
         MaxMinNumberPrinter maxMinNumberPrinter = new MaxMinNumberPrinter();
         maxMinNumberPrinter.printNumber(numbers);
 
+        NumbersMultiples numbersMultiples = new NumbersMultiples();
+        numbersMultiples.printNumber(numbers);
+
         /*System.out.print("Enter number quantity: ");
         Scanner scanner = new Scanner(System.in);
         int size = scanner.nextInt();
