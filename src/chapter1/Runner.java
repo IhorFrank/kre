@@ -14,8 +14,14 @@ public class Runner {
         MaxMinNumberPrinter maxMinNumberPrinter = new MaxMinNumberPrinter();
         maxMinNumberPrinter.printNumber(numbers);
 
+        //3. Числа, которые делятся на 3 или на 9.
+        //4. Числа, которые делятся на 5 и на 7.
         NumbersMultiples numbersMultiples = new NumbersMultiples();
         numbersMultiples.printNumber(numbers);
+
+        //5. Элементы, расположенные методом пузырька по убыванию модулей.
+         Bubbles bubbles = new Bubbles();
+         bubbles.printNumber(numbers);
 
         /*System.out.print("Enter number quantity: ");
         Scanner scanner = new Scanner(System.in);
