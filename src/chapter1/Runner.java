@@ -1,13 +1,18 @@
 package chapter1;
 
-import java.util.Arrays;
-import java.util.Scanner;
+import static chapter1.helper.UserInputReader.getIntUserInput;
 
-public class Task1 {
+public class Runner {
     public static void main(String[] args) {
+        int[] numbers = getIntUserInput();
 
-        OddEvenNumbersPrinter.printNumbers();
-// sdsdcscscas
+        //1. Четные и нечетные числа.
+        OddEvenNumbersPrinter oddEvenNumbersPrinter = new OddEvenNumbersPrinter();
+        oddEvenNumbersPrinter.printNumbers(numbers);
+
+        //2. Наибольшее и наименьшее число.
+        MaxMinNumberPrinter maxMinNumberPrinter = new MaxMinNumberPrinter();
+        maxMinNumberPrinter.printNumber(numbers);
 
         /*System.out.print("Enter number quantity: ");
         Scanner scanner = new Scanner(System.in);
@@ -19,32 +24,6 @@ public class Task1 {
         for (int i = 0; i < size; i++) {
             numbers[i] = scanner.nextInt();
         }
-//Ввести с консоли n целых чисел. На консоль вывести:
-//1. Четные и нечетные числа.
-
-        for (int i = 0; i < size; i++) {
-            if (numbers[i] % 2 != 0) {
-                System.out.println("Odd numbers: " + numbers[i]);
-            } else {
-                System.out.println("Even numbers :" + numbers[i]);
-            }
-        }
-
-//2. Наибольшее и наименьшее число.
-        int max = numbers[0];
-        int min = numbers[0];
-
-        for (int i = 0; i < size; i++)
-            if (max < numbers[i])
-                max = numbers[i];
-        System.out.println("Max chislo : " + max);
-
-
-        for (int i = 0; i < size; i++)
-            if (min > numbers[i])
-                min = numbers[i];
-        System.out.println("Min chislo : " + min);
-
 
 //3. Числа, которые делятся на 3 или на 9.
 
@@ -77,6 +56,5 @@ public class Task1 {
             }
         }
         System.out.println("Puzuri :" + Arrays.toString(numbers));*/
-
     }
 }
