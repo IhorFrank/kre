@@ -19,6 +19,6 @@ public class Bubbles {
             }
 
         }
-        System.out.println(Arrays.toString(numbers));
+        System.out.println("Bubbles :" + Arrays.toString(numbers));
     }
 }
