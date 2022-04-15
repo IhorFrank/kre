@@ -40,7 +40,7 @@ public class Runner {
         //на новую строку.
 
         RandomNumbers randomNumbers = new RandomNumbers();
-        randomNumbers.printRandom();
+        randomNumbers.random(20);
 
 
 
