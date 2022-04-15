@@ -39,6 +39,10 @@ public class Runner {
         //8. Вывести заданное количество случайных чисел с переходом и без перехода
         //на новую строку.
 
+        RandomNumbers randomNumbers = new RandomNumbers();
+        randomNumbers.printRandom();
+
+
 
 
 
