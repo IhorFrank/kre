@@ -1,5 +1,7 @@
 package chapter1;
 
+import java.util.Arrays;
+
 import static chapter1.helper.UserInputReader.getIntUserInput;
 
 public class Runner {
@@ -20,8 +22,10 @@ public class Runner {
         numbersMultiples.printNumber(numbers);
 
         //5. Элементы, расположенные методом пузырька по убыванию модулей.
-         Bubbles bubbles = new Bubbles();
-         bubbles.printNumber(numbers);
+        Bubbles bubbles = new Bubbles();
+        bubbles.printNumber(numbers);
+
+
 
         /*System.out.print("Enter number quantity: ");
         Scanner scanner = new Scanner(System.in);

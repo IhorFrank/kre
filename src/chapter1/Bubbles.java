@@ -10,15 +10,15 @@ public class Bubbles {
         while (!isShort) {
             isShort = true;
             for (int i = 0; i < numbers.length - 1; i++) {
-                if (numbers[i] > numbers[i + 1])
+                if (numbers[i] < numbers[i + 1]) {
                     isShort = false;
-
-                buf = numbers[i];
-                numbers[i] = numbers[i + 1];
-                numbers[i + 1] = buf;
-
+                    buf = numbers[i];
+                    numbers[i] = numbers[i + 1];
+                    numbers[i + 1] = buf;
+                }
             }
-        }System.out.println("Bubbles : " + Arrays.toString(numbers));
 
+        }
+        System.out.println(Arrays.toString(numbers));
     }
 }
