@@ -48,6 +48,8 @@ public class Runner {
 
         //10. Ввести целые числа как аргументы командной строки, подсчитать их сум-
         //мы (произведения) и вывести результат на консоль.
+        SumMulti sumMulti = new SumMulti();
+        sumMulti.printNumbers(numbers);
 
 
     }
