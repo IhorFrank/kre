@@ -42,10 +42,10 @@ public class Runner {
         //на новую строку.
 
         RandomNumbersPrinter randomNumbers = new RandomNumbersPrinter();
-        randomNumbers.random(6);
+        randomNumbers.printRandomNumbers(6);
         //9. Ввести пароль из командной строки и сравнить его со строкой-образцом.
         PasswordChecker checkPassword = new PasswordChecker();
-        checkPassword.chek();
+        checkPassword.check();
 
         //10. Ввести целые числа как аргументы командной строки, подсчитать их сум-
         //мы (произведения) и вывести результат на консоль.

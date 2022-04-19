@@ -1,13 +1,9 @@
 package chapter1.varianta;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
-
 public class RandomNumbersPrinter {
-    public void random(int number) {
+    public void printRandomNumbers(int quantity) {
         System.out.print("Random numbers: ");
-        for (int i = 0; i < number; i++) {
+        for (int i = 0; i < quantity; i++) {
             int a = (int) (Math.random() * 2000);
             System.out.print(a + " ");
         }
