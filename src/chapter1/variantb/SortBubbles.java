@@ -3,7 +3,7 @@ package chapter1.variantb;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class ShortBubbles {
+public class SortBubbles {
     public void printNumber(int[] numbers) {
         boolean isShort = false;
         int buf;

@@ -2,7 +2,7 @@ package chapter1.varianta;
 
 import java.util.Scanner;
 
-public class CheckPassword {
+public class PasswordChecker {
     public void chek() {
         System.out.println("Enter your password");
         Scanner scanner = new Scanner(System.in);

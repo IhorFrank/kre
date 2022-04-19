@@ -2,7 +2,7 @@ package chapter1.varianta;
 
 import java.util.Arrays;
 
-public class SumAndMultiArgs {
+public class SumAndMultiArgsPrinter {
     public void printNumbers(String[] args) {
         int[] number = new int[args.length];
         for (int i = 0; i < args.length; i++) {

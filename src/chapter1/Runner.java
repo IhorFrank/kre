@@ -19,11 +19,11 @@ public class Runner {
 
         //3. Числа, которые делятся на 3 или на 9.
         //4. Числа, которые делятся на 5 и на 7.
-        NumbersDivision numbersDivision = new NumbersDivision();
+        NumbersDivisionPrinter numbersDivision = new NumbersDivisionPrinter();
         numbersDivision.printNumber(numbers);
 
         //5. Элементы, расположенные методом пузырька по убыванию модулей.
-        ShortBubbles bubbles = new ShortBubbles();
+        SortBubbles bubbles = new SortBubbles();
         bubbles.printNumber(numbers);
 
         //6. Приветствовать любого пользователя при вводе его имени через команд-
@@ -41,15 +41,15 @@ public class Runner {
         //8. Вывести заданное количество случайных чисел с переходом и без перехода
         //на новую строку.
 
-        RandomNumbers randomNumbers = new RandomNumbers();
+        RandomNumbersPrinter randomNumbers = new RandomNumbersPrinter();
         randomNumbers.random(6);
         //9. Ввести пароль из командной строки и сравнить его со строкой-образцом.
-        CheckPassword checkPassword = new CheckPassword();
+        PasswordChecker checkPassword = new PasswordChecker();
         checkPassword.chek();
 
         //10. Ввести целые числа как аргументы командной строки, подсчитать их сум-
         //мы (произведения) и вывести результат на консоль.
-        SumAndMultiArgs sumMulti = new SumAndMultiArgs();
+        SumAndMultiArgsPrinter sumMulti = new SumAndMultiArgsPrinter();
         sumMulti.printNumbers(args);
 
 
