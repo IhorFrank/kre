@@ -56,9 +56,13 @@ public class Runner {
         //11.Все трехзначные числа, в десятичной записи которых нет одинаковых
         //цифр.
 
-
         UniqueDigitNumbers uniqueDigitNumbers = new UniqueDigitNumbers();
         uniqueDigitNumbers.printNumber();
+
+        //12. Отсортированные числа в порядке возрастания и убывания.
+
+        IncreaseReductionNumbers increaseNumbers = new IncreaseReductionNumbers();
+        increaseNumbers.numbPrinter(numbers);
 
 
     }
