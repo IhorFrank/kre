@@ -1,6 +1,6 @@
-package chapter1;
+package chapter1.variantb;
 
-public class Unique {
+public class UniqueDigitNumbers {
     public static void printNumber () {
         for (int i = 100; i <= 999; i++) {
             int a = i / 100; // 1-9

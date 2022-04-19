@@ -1,12 +1,12 @@
-package chapter1;
+package chapter1.varianta;
 
 import java.util.Scanner;
 
-public class Hello {
-    public  void printHello() {
-        System.out.print("Enter your name: ");
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Hello " + scanner.nextLine());
+public class Greeter {
+    public void printHello(String[] args) {
+        for (int i=0; i<args.length; i++){
+        System.out.println("Hello " + args[i]);
     }
 
+}
 }

@@ -1,6 +1,7 @@
 package chapter1;
 
-import java.util.Arrays;
+import chapter1.varianta.*;
+import chapter1.variantb.*;
 
 import static chapter1.helper.UserInputReader.getIntUserInput;
 
@@ -18,38 +19,46 @@ public class Runner {
 
         //3. Числа, которые делятся на 3 или на 9.
         //4. Числа, которые делятся на 5 и на 7.
-        NumbersMultiples numbersMultiples = new NumbersMultiples();
-        numbersMultiples.printNumber(numbers);
+        NumbersDivision numbersDivision = new NumbersDivision();
+        numbersDivision.printNumber(numbers);
 
         //5. Элементы, расположенные методом пузырька по убыванию модулей.
-        Bubbles bubbles = new Bubbles();
+        ShortBubbles bubbles = new ShortBubbles();
         bubbles.printNumber(numbers);
 
         //6. Приветствовать любого пользователя при вводе его имени через команд-
         //ную строку.
-        Hello hello = new Hello();
-        hello.printHello();
+        Greeter hello = new Greeter();
+        hello.printHello(args);
+
 
         //7. Отобразить в окне консоли аргументы командной строки в обратном
         //порядке.
 
-        Revers revers = new Revers();
-        revers.printRevers();
+        ReverseArgsPrinter revers = new ReverseArgsPrinter();
+        revers.printRevers(args);
 
         //8. Вывести заданное количество случайных чисел с переходом и без перехода
         //на новую строку.
 
         RandomNumbers randomNumbers = new RandomNumbers();
         randomNumbers.random(6);
-
         //9. Ввести пароль из командной строки и сравнить его со строкой-образцом.
         CheckPassword checkPassword = new CheckPassword();
         checkPassword.chek();
 
         //10. Ввести целые числа как аргументы командной строки, подсчитать их сум-
         //мы (произведения) и вывести результат на консоль.
-        SumMulti sumMulti = new SumMulti();
-        sumMulti.printNumbers(numbers);
+        SumAndMultiArgs sumMulti = new SumAndMultiArgs();
+        sumMulti.printNumbers(args);
+
+
+        //11.Все трехзначные числа, в десятичной записи которых нет одинаковых
+        //цифр.
+
+
+        UniqueDigitNumbers uniqueDigitNumbers = new UniqueDigitNumbers();
+        uniqueDigitNumbers.printNumber();
 
 
     }

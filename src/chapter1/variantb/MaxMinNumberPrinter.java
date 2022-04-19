@@ -1,4 +1,4 @@
-package chapter1;
+package chapter1.variantb;
 
 public class MaxMinNumberPrinter {
     public void printNumber(int[] numbers) {

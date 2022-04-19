@@ -1,4 +1,4 @@
-package chapter1;
+package chapter1.varianta;
 
 import java.util.Scanner;
 

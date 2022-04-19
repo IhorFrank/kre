@@ -1,14 +1,12 @@
-package chapter1;
+package chapter1.varianta;
 
 import java.util.Scanner;
 
-public class Revers {
-    public void printRevers() {
-        System.out.print("Something write :");
-        Scanner scanner = new Scanner(System.in);
-        StringBuilder stringBuilder = new StringBuilder(scanner.nextLine());
-        stringBuilder.reverse();
-        System.out.println("Revers:" + stringBuilder);
+public class ReverseArgsPrinter {
+    public void printRevers(String[] args) {
+        for (int i = args.length - 1; i >= 0; i--) {
+            System.out.println("Reverse : " + args[i]);
+        }
 
     }
 }
