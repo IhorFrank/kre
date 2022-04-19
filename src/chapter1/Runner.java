@@ -29,7 +29,7 @@ public class Runner {
         //6. Приветствовать любого пользователя при вводе его имени через команд-
         //ную строку.
         Greeter hello = new Greeter();
-        hello.printHello(args);
+        hello.printHello();
 
 
         //7. Отобразить в окне консоли аргументы командной строки в обратном
