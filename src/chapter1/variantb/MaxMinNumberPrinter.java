@@ -1,7 +1,7 @@
 package chapter1.variantb;
 
 public class MaxMinNumberPrinter {
-    public void printNumber(int[] numbers) {
+    public void printNumbers(int[] numbers) {
 
         int max = numbers[0];
         int min = numbers[0];

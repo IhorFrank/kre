@@ -3,8 +3,8 @@ package chapter1.variantb;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class SortBubbles {
-    public void printNumber(int[] numbers) {
+public class BubbleSorter {
+    public void printSortedNumbers(int[] numbers) {
         boolean isShort = false;
         int buf;
         while (!isShort) {

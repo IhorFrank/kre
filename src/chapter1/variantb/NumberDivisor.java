@@ -3,8 +3,8 @@ package chapter1.variantb;
 import java.util.ArrayList;
 import java.util.List;
 
-public class NumbersDivisionPrinter {
-    public void printNumber(int[] numbers) {
+public class NumberDivisor {
+    public void printDivisionNumbers(int[] numbers) {
 
         List<Integer> is3or9 = new ArrayList<>();
         List<Integer> is5and7 = new ArrayList<>();

@@ -1,7 +1,7 @@
 package chapter1.variantb;
 
-public class UniqueDigitNumbers {
-    public static void printNumber () {
+public class UniqueDigits {
+    public  void printUniqueNumbers () {
         for (int i = 100; i <= 999; i++) {
             int a = i / 100; // 1-9
             int b = (i / 10)%10; // (11/10) %  10 = 1
