@@ -60,11 +60,11 @@ public class Runner {
 //
 //        //12. Отсортированные числа в порядке возрастания и убывания.
 //
-//        IncreaseReductionNumbers increaseNumbers = new IncreaseReductionNumbers();
-//        increaseNumbers.printSort(numbers);
-//        increaseNumbers.printSortArray(numbers);
-//
-//        //13. Простые числа.
+        IncreaseReductionNumbers increaseNumbers = new IncreaseReductionNumbers();
+        increaseNumbers.printSort(numbers);
+        increaseNumbers.printSortArray(numbers);
+
+        //13. Простые числа.
 
         PrimeNumberChecker sortSimpleNumbers = new PrimeNumberChecker();
         sortSimpleNumbers.printNumbers(numbers);
