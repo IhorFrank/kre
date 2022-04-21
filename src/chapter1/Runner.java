@@ -1,19 +1,14 @@
 package chapter1;
 
-import chapter1.varianta.*;
-import chapter1.variantb.*;
-import chapter2.MediumLargeDivider;
-import chapter2.MediumLargeDivider;
-import chapter2.ShortLongNumberSeeker;
+import chapter2.variana.MediumLargeDivider;
+import chapter2.variana.ShortLongNumberSeeker;
 
-import java.util.Arrays;
 
-import static chapter1.helper.UserInputReader.getIntUserInput;
-import static chapter1.helper.UserInputScanner.getStringInput;
+
 public class Runner {
     public static void main(String[] args) {
 //        int[] numbers = getIntUserInput();
-          String [] array = getStringInput();
+
 //        //1. Четные и нечетные числа.
 //        OddEvenNumbersPrinter oddEvenNumbersPrinter = new OddEvenNumbersPrinter();
 //        oddEvenNumbersPrinter.printNumbers(numbers);
@@ -74,16 +69,7 @@ public class Runner {
 //        PrimeNumberChecker sortSimpleNumbers = new PrimeNumberChecker();
 //        sortSimpleNumbers.printNumbers(numbers);
 
-        //14 Найти самое короткое и самое длинное число. Вывести найденные числа
-        //и их длину.
-        MediumLargeDivider mediumLarge = new MediumLargeDivider();
-        mediumLarge.printNumber(array);
 
-        //15 Вывести на консоль те числа, длина которых меньше (больше) средней,
-        //а также длину.
-
-        ShortLongNumberSeeker shortLongNumberSeeker = new ShortLongNumberSeeker();
-        shortLongNumberSeeker.printNumber(array);
 
 
     }
