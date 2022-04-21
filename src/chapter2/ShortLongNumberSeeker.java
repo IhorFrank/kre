@@ -1,11 +1,13 @@
 package chapter2;
 
+import java.util.Scanner;
+
 public class ShortLongNumberSeeker {
-    public static void main(String[] arr) {
-        int min = arr.length;
+    public  void printNumber (String [] array) {
+        int min = array.length;
         int max = 0;
         String lenghtMax = null, lenghtMin = null;
-        for (String number : arr) {
+        for (String number : array) {
             if (number.length() > max) {
                 lenghtMax = number;
                 max = number.length();
