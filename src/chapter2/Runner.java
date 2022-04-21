@@ -10,13 +10,13 @@ public class Runner {
         String[] array = getStringInput();
 
 
-        //1 Найти самое короткое и самое длинное число. Вывести найденные числа
-        //и их длину.
+        //1 Вывести на консоль те числа, длина которых меньше (больше) средней,
+        //а также длину.
         MediumLargeDivider mediumLarge = new MediumLargeDivider();
         mediumLarge.printNumber(array);
 
-        //2 Вывести на консоль те числа, длина которых меньше (больше) средней,
-        //а также длину.
+        //2Найти самое короткое и самое длинное число. Вывести найденные числа
+        //и их длину.
 
         ShortLongNumberSeeker shortLongNumberSeeker = new ShortLongNumberSeeker();
         shortLongNumberSeeker.printNumber(array);

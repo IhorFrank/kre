@@ -2,8 +2,8 @@ package chapter2.varianta;
 
 public class ShortLongNumberSeeker {
     public  void printNumber (String [] array) {
-        int min = array.length;
-        int max = 0;
+        int min = array[0].length();
+        int max = array[0].length();
         String lenghtMax = null, lenghtMin = null;
         for (String number : array) {
             if (number.length() > max) {
