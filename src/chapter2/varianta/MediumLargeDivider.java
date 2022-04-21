@@ -1,6 +1,4 @@
-package chapter2.variana;
-
-import java.util.Scanner;
+package chapter2.varianta;
 
 public class MediumLargeDivider {
     public  void printNumber (String [] array) {

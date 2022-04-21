@@ -1,9 +1,5 @@
 package chapter1;
 
-import chapter2.variana.MediumLargeDivider;
-import chapter2.variana.ShortLongNumberSeeker;
-
-
 
 public class Runner {
     public static void main(String[] args) {

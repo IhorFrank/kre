@@ -1,7 +1,7 @@
 package chapter2;
 
-import chapter2.variana.MediumLargeDivider;
-import chapter2.variana.ShortLongNumberSeeker;
+import chapter2.varianta.MediumLargeDivider;
+import chapter2.varianta.ShortLongNumberSeeker;
 
 import static chapter2.helper.UserInputScanner.getStringInput;
 

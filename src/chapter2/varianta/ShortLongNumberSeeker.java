@@ -1,6 +1,4 @@
-package chapter2.variana;
-
-import java.util.Scanner;
+package chapter2.varianta;
 
 public class ShortLongNumberSeeker {
     public  void printNumber (String [] array) {
