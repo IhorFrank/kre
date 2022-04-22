@@ -1,7 +1,7 @@
 package chapter2;
 
 import chapter2.varianta.MediumLargeDivider;
-import chapter2.varianta.ShortLongNumberSeeker;
+import chapter2.varianta.ShortLongNumberPrinter;
 
 import static chapter2.helper.UserInputScanner.getStringInput;
 
@@ -18,7 +18,7 @@ public class Runner {
         //2Найти самое короткое и самое длинное число. Вывести найденные числа
         //и их длину.
 
-        ShortLongNumberSeeker shortLongNumberSeeker = new ShortLongNumberSeeker();
-        shortLongNumberSeeker.printNumber(array);
+        ShortLongNumberPrinter shortLongNumberPrinter = new ShortLongNumberPrinter();
+        shortLongNumberPrinter.printNumber(array);
     }
 }

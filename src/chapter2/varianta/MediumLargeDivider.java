@@ -1,20 +1,22 @@
 package chapter2.varianta;
 
 public class MediumLargeDivider {
-    public  void printNumber (String [] array) {
+    public void printNumber(String[] input) {
 
-        int medium = 0;
-        for (String number : array) {
-            medium += number.length();
+        int midLength = 0;
+        int maxLength = 0;
+        for (String number : input) {
+            maxLength += number.length();
         }
-        if (array.length > 0) {
-            medium /= array.length;
+        if (input.length > 0) {
+            midLength = maxLength / input.length;
         }
-        for (String number : array) {
-            if (number.length() > medium) {
-                System.out.println( "Max : " + number + " quantity charset : " + number.length());
+
+        for (String number : input) {
+            if (number.length() > midLength) {
+                System.out.println("Max : " + number + " quantity charset : " + number.length());
             }
-            if (number.length() < medium) {
+            if (number.length() < midLength) {
                 System.out.println("Min : " + number + " quantity charset : " + number.length());
             }
         }
