@@ -6,7 +6,7 @@ import java.util.FormatterClosedException;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
 
-public class MountPrinter {
+public class MontPrinter {
     public void printMount() {
         System.out.println("Enter number mount");
         Scanner scanner = new Scanner(System.in);

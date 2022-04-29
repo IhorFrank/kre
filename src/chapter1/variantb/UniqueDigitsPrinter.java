@@ -23,6 +23,7 @@ public class UniqueDigitsPrinter {
             Set<Character> charSet = new HashSet<>();
             for (char c : chrNum) {
                 charSet.add(c);
+
             }
             if (charSet.size() == 3) {
                 System.out.println(strNum);

@@ -1,6 +1,7 @@
 package chapter2;
 
-import chapter2.varianta.DifferentDigitsNumberPrinter;
+import chapter2.varianta.EvenNumbersPrinter;
+import chapter2.varianta.IncreasingNumberLenghtPrinter;
 
 
 import static chapter2.helper.UserInputScanner.getStringInput;
@@ -38,10 +39,24 @@ public class Runner {
 //
 //        //5Найти число, состоящее только из различных цифр. Если таких чисел не-
 //        //сколько, найти первое из них.
+//
+//        DifferentDigitsNumberPrinter differentNumbersPrinter = new DifferentDigitsNumberPrinter();
+//        differentNumbersPrinter.printNumber(array);
+//
+//
+//        //6.Найти число, цифры в котором идут в строгом порядке возрастания. Если
+//        //таких чисел несколько, найти первое из них.
+//
+//        DifferentDigitsNumberPrinter2 differentDigitsNumberPrinter = new DifferentDigitsNumberPrinter2();
+//        differentDigitsNumberPrinter.printNumber(array);
 
-        DifferentDigitsNumberPrinter differentNumbersPrinter = new DifferentDigitsNumberPrinter();
-        differentNumbersPrinter.printNumber(array);
+//        //7. //Упорядочить и вывести числа в порядке возрастания (убывания) значений
+//        //их длины.
+//        IncreasingNumberLenghtPrinter increasingNumberLenghtPrinter = new IncreasingNumberLenghtPrinter();
+//        increasingNumberLenghtPrinter.printNumber(array);
 
+        EvenNumbersPrinter evenNumbersPrinter = new EvenNumbersPrinter();
+        evenNumbersPrinter.printNumber(array);
 
     }
 
