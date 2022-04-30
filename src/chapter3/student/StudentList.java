@@ -11,7 +11,7 @@ public class StudentList {
     }
 
     //a) список студентов заданного факультета;
-    public void facultyPrint(String faculty) {
+    public void printFaculty(String faculty) {
         System.out.println("List of students faculty : " + faculty);
         for (StudentConstructor st : studentsList) {
             if (st.getFaculty().equals(faculty)) {
@@ -21,7 +21,7 @@ public class StudentList {
     }
 
     //b) списки студентов для каждого факультета и курса;
-    public void facultyMathCourse2Print() {
+    public void printFacultyMathCourse2() {
         System.out.println("List of students faculty Math course 2: " );
         for (StudentConstructor st : studentsList) {
             if (st.getFaculty().equals("Math") && st.getCourse() == 2) {
@@ -29,7 +29,7 @@ public class StudentList {
             }
         }
     }
-    public void facultyPhilosophyCourse1Print() {
+    public void printFacultyPhilosophyCourse1() {
         System.out.println("List of students faculty Philosophy course 1: " );
         for (StudentConstructor st : studentsList) {
             if (st.getFaculty().equals("Philosophy") && st.getCourse() == 1) {
@@ -39,7 +39,7 @@ public class StudentList {
     }
 
     //c) список студентов, родившихся после заданного года;
-    public void birthdayStudentPrint(int yearOfBirth) {
+    public void printYearBirthdayStudent(int yearOfBirth) {
         System.out.println("List of student over " + yearOfBirth + " year of birth");
         for (StudentConstructor st : studentsList) {
             if (st.getYearOfBirth()>yearOfBirth) {
@@ -48,7 +48,7 @@ public class StudentList {
         }
     }
     //d) список учебной группы.
-    public void  groupStudentPrint (String group){
+    public void printGroupStudent(String group){
         System.out.println("List of student group: " + group );
         for (StudentConstructor st : studentsList){
             if(st.getGroup().equals(group)){

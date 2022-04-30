@@ -1,21 +1,23 @@
 package chapter3.student;
 
 
+import java.util.Arrays;
+
 public class Runner {
     public static void main(String[] args) {
         Student student = new Student();
 
+
         StudentList students = new StudentList();
-        students.addStudent(student.st1);
-        students.addStudent(student.st2);
-        students.addStudent(student.st3);
+        for (StudentConstructor studentConstructor : Arrays.asList(student.st1, student.st2, student.st3)) {
+            students.addStudent(studentConstructor);
+        }
 
-
-        students.facultyPrint("Math");
-        students.facultyMathCourse2Print();
-        students.facultyPhilosophyCourse1Print();
-        students.birthdayStudentPrint(2000);
-        students.groupStudentPrint("MT1");
+        students.printFaculty("Math");
+        students.printFacultyMathCourse2();
+        students.printFacultyPhilosophyCourse1();
+        students.printYearBirthdayStudent(2000);
+        students.printGroupStudent("MT1");
     }
 }
 
