@@ -3,7 +3,7 @@ package chapter2.variavtb;
 import java.time.Month;
 import java.util.Scanner;
 
-public class MontPrinter2 {
+public class MonthPrinter2 {
     public void printMount() {
         System.out.println("Enter number mount");
         Scanner scanner = new Scanner(System.in);

@@ -1,15 +1,12 @@
 package chapter2.varianta;
 
-// //6.Найти число, в котором число различных цифр минимально. Если таких
-//          //чисел несколько, найти первое из них.
+import java.util.ArrayList;
 
-import java.util.*;
-
-public class IncreasingNumberPrinter {
+public class UniqueDigitsNumberPrinter {
     public void printNumber(String[] input) {
         ArrayList<String> number = new ArrayList<>();
         for (String num : input) {
-            if (isNumber(num)) number.add(num);
+            if (isUniqueDigits(num)) number.add(num);
         }
         if (number.isEmpty()) {
             System.out.println("not number");
@@ -19,10 +16,10 @@ public class IncreasingNumberPrinter {
         }
     }
 
-    private boolean isNumber(String number) {
+    private static boolean isUniqueDigits(String number) {
         for (int i = 0; i < number.length(); i++) {
             for (int j = i + 1; j < number.length(); j++) {
-                if (number.charAt(i) > number.charAt(j)) {
+                if (number.charAt(i) == number.charAt(j)) {
                     return false;
                 }
             }
@@ -30,10 +27,6 @@ public class IncreasingNumberPrinter {
         return true;
     }
 }
-
-
-
-
 
 
 

@@ -1,16 +1,15 @@
 package chapter2;
 
-import chapter2.varianta.EvenNumbersPrinter;
-import chapter2.varianta.IncreasingNumberLenghtPrinter;
-
+import chapter2.varianta.PalindromeNumberPrinter;
+import chapter2.variavtb.BelongingIntervalChecker;
 
 import static chapter2.helper.UserInputScanner.getStringInput;
+
 
 public class Runner {
     public static void main(String[] args) {
         String[] array = getStringInput();
-
-
+//
 //        //1 Вывести на консоль те числа, длина которых меньше (больше) средней,
 //        //а также длину.
 //        MediumLargeDivider mediumLarge = new MediumLargeDivider();
@@ -52,12 +51,23 @@ public class Runner {
 
 //        //7. //Упорядочить и вывести числа в порядке возрастания (убывания) значений
 //        //их длины.
-//        IncreasingNumberLenghtPrinter increasingNumberLenghtPrinter = new IncreasingNumberLenghtPrinter();
-//        increasingNumberLenghtPrinter.printNumber(array);
+//        UniqueDigitsNumberPrinter uniqueDigitsNumberPrinter = new UniqueDigitsNumberPrinter();
+//        uniqueDigitsNumberPrinter.printNumber(array);
 
-        EvenNumbersPrinter evenNumbersPrinter = new EvenNumbersPrinter();
-        evenNumbersPrinter.printNumber(array);
+//        //5. Найти количество чисел, содержащих только четные цифры
+//        EvenDigitsNumbersPrinter evenNumbersPrinter = new EvenDigitsNumbersPrinter();
+//        evenNumbersPrinter.printNumber(array);
 
+//        // Среди чисел найти число-палиндром. Если таких чисел больше одного,
+//        // найти второе.
+//        PalindromeNumberPrinter palindromeNumberPrinter = new PalindromeNumberPrinter();
+//        palindromeNumberPrinter.printPalindrome(array);
+
+//          //Определить принадлежность некоторого значения k интервалам (n, m], [n,
+//          //m), (n, m), [n, m].
+//
+//        BelongingIntervalChecker belongingIntervalChecker = new BelongingIntervalChecker();
+//        belongingIntervalChecker.printBelonging();
     }
 
 
