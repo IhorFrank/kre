@@ -16,7 +16,7 @@ public class Runner {
         students.printFaculty("Math");
         students.printFacultyMathCourse2();
         students.printFacultyPhilosophyCourse1();
-        students.printStudentBornAfterYears(2000);
+        students.printStudentBornAfter(2000);
         students.printGroupStudent("MT1");
     }
 }

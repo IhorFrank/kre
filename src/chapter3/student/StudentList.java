@@ -39,7 +39,7 @@ public class StudentList {
     }
 
     //c) список студентов, родившихся после заданного года;
-    public void printStudentBornAfterYears(int yearOfBirth) {
+    public void printStudentBornAfter(int yearOfBirth) {
         System.out.println("List of student over " + yearOfBirth + " year of birth");
         for (StudentConstructor st : studentsList) {
             if (st.getYearOfBirth()>yearOfBirth) {
