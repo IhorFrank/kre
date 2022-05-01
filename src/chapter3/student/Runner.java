@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class Runner {
     public static void main(String[] args) {
-        Student student = new Student();
+        Students student = new Students();
 
 
         StudentList students = new StudentList();

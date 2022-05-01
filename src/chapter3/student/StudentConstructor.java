@@ -26,7 +26,7 @@ public class StudentConstructor {
     private int course;
     private String group;
 
-    StudentConstructor(int id, String surname, String name, String patronymic, int datOfBirth, int monthOfBirth,
+     StudentConstructor(int id, String surname, String name, String patronymic, int datOfBirth, int monthOfBirth,
                        int yearOfBirth, String address,
                        int phone, String faculty, int course, String group) {
         this.id = id;
