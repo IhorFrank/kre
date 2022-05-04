@@ -1,15 +1,17 @@
-package chapter3.train;
+package chapter3.varianta.train;
 
-import java.sql.Time;
+import java.time.LocalTime;
 
 
 public class Runner {
     public static void main(String[] args) {
-        Train train = new Train("Lviv", new StringBuilder("123B"), new Time(22, 12, 0), 300,
-                100, 250, 50);
-        Train train1 = new Train("Kyiv", new StringBuilder("112A"), new Time(11, 22, 0),
+
+
+        Train train = new Train("Lviv", new StringBuilder("123B"), LocalTime.of(21,1),22, 300,
+                100, 250);
+        Train train1 = new Train("Kyiv", new StringBuilder("112A"), LocalTime.of(14, 22),
                 400, 200, 100, 40);
-        Train train2 = new Train("Kyiv", new StringBuilder("13C"), new Time(0, 34, 0), 0,
+        Train train2 = new Train("Kyiv", new StringBuilder("13C"), LocalTime.of(12, 34), 0,
                 200, 40, 20);
 
 
@@ -23,9 +25,9 @@ public class Runner {
         System.out.println("----------------------------------------------------");
         railwayStation.getTrainDestination("Lviv");
         System.out.println("----------------------------------------------------");
-        railwayStation.getTrainDestinationAndTimeDeparture("Lviv", new Time(20, 12, 0));
+        railwayStation.getTrainDestinationAndTimeDeparture("Lviv", LocalTime.of(20, 12));
         System.out.println("----------------------------------------------------");
-        railwayStation.getTrainDestinationAndTimeDeparture("Kyiv", new Time(11, 2, 0));
+        railwayStation.getTrainDestinationAndTimeDeparture("Kyiv", LocalTime.of(12, 2));
         System.out.println("----------------------------------------------------");
         railwayStation.getTrainDestinationAndWithGeneralPlaces("Kyiv");
     }

@@ -1,6 +1,6 @@
-package chapter3.train;
+package chapter3.varianta.train;
 
-import java.sql.Time;
+import java.time.LocalTime;
 import java.util.ArrayList;
 
 public class RailwayStation {
@@ -25,10 +25,10 @@ public class RailwayStation {
 
     //b) список поездов, следующих до заданного пункта назначения и отправ-
     ///ляющихся после заданного часа;
-    void getTrainDestinationAndTimeDeparture(String destination, Time departure) {
+    void getTrainDestinationAndTimeDeparture(String destination, LocalTime departure) {
         System.out.println("List of trains going to " + destination + " after " + departure);
         for (Train t : train) {
-            if (t.getDestination().equals(destination) && (t.getDepartureTime()).after(departure)) {
+            if (t.getDestination().equals(destination) && (t.getDepartureTime()).isAfter(departure)) {
                 System.out.println(t);
             }
         }

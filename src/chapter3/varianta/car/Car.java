@@ -1,4 +1,4 @@
-package chapter3.car;
+package chapter3.varianta.car;
 
 // id, Марка, Модель, Год выпуска, Цвет, Цена, Регистрационный номер.
 public class Car {

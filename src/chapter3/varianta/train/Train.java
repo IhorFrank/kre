@@ -1,6 +1,6 @@
-package chapter3.train;
+package chapter3.varianta.train;
 
-import java.sql.Time;
+import java.time.LocalTime;
 
 
 //Train: Пункт назначения, Номер поезда, Время отправления, Число мест
@@ -17,14 +17,13 @@ public class Train {
 
     private String destination;
     private StringBuilder numberTrain;
-    private Time departureTime;
+    private LocalTime departureTime;
     private int numberOfGeneralPlaces;
     private int numberOfCoupePlaces;
     private int numberOfReservedSeadPlaces;
     private int numberOfLuxuryPlaces;
 
-    Train(String destination, StringBuilder numberTrain, Time departureTime, int numberOfGeneralPlaces, int numberOfCoupePlaces,
-          int numberOfReservedSeadPlaces, int numberOfLuxuryPlaces) {
+    Train(String destination, StringBuilder numberTrain, LocalTime departureTime, int numberOfGeneralPlaces, int numberOfCoupePlaces , int numberOfReservedSeadPlaces, int numberOfLuxuryPlaces) {
         this.destination = destination;
         this.numberTrain = numberTrain;
         this.departureTime = departureTime;
@@ -66,11 +65,12 @@ public class Train {
         this.numberOfGeneralPlaces = numberOfGeneralPlaces;
     }
 
-    public Time getDepartureTime() {
+    public LocalTime getDepartureTime() {
+
         return departureTime;
     }
 
-    public void setDepartureTime(Time departureTime) {
+    public void setDepartureTime(LocalTime departureTime) {
         this.departureTime = departureTime;
     }
 

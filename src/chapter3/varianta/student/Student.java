@@ -1,5 +1,7 @@
-package chapter3.student;
+package chapter3.varianta.student;
 
+
+import java.time.LocalDate;
 
 //Определить конcтрукторы и методы setТип(), getТип(), toString(). Определить дополнительно
 //методы в классе, создающем массив объектов. Задать критерий выбора данных
@@ -12,30 +14,26 @@ package chapter3.student;
 //b) списки студентов для каждого факультета и курса;
 //c) список студентов, родившихся после заданного года;
 //d) список учебной группы.
-public class StudentConstructor {
+public class Student {
     private int id;
     private String surname;
     private String name;
     private String patronymic;
-    private int datOfBirth;
-    private int monthOfBirth;
-    private int yearOfBirth;
+    private LocalDate birthday;
     private String address;
     private int phone;
     private String faculty;
     private int course;
     private String group;
 
-     StudentConstructor(int id, String surname, String name, String patronymic, int datOfBirth, int monthOfBirth,
-                       int yearOfBirth, String address,
-                       int phone, String faculty, int course, String group) {
+
+    Student(int id, String surname, String name, String patronymic, LocalDate birthday,String address,
+            int phone, String faculty, int course, String group) {
         this.id = id;
         this.surname = surname;
         this.name = name;
         this.patronymic = patronymic;
-        this.datOfBirth = datOfBirth;
-        this.monthOfBirth = monthOfBirth;
-        this.yearOfBirth = yearOfBirth;
+        this.birthday = birthday;
         this.address = address;
         this.phone = phone;
         this.faculty = faculty;
@@ -43,6 +41,13 @@ public class StudentConstructor {
         this.group = group;
     }
 
+    public LocalDate getBirthday() {
+        return birthday;
+    }
+
+    public void setBirthday(LocalDate birthday) {
+        this.birthday = birthday;
+    }
 
     public int getId() {
         return id;
@@ -74,34 +79,6 @@ public class StudentConstructor {
 
     public void setPatronymic(String patronymic) {
         this.patronymic = patronymic;
-    }
-
-    public int getDatOfBirth() {
-        return datOfBirth;
-
-    }
-
-    public void setBirthday(int datOfBirth) {
-        if (datOfBirth > 0 && datOfBirth <= 31)
-            this.datOfBirth = datOfBirth;
-    }
-
-    public int getMonthOfBirth() {
-        return monthOfBirth;
-    }
-
-    public void setMonthOfBirth(int monthOfBirth) {
-        if (monthOfBirth > 0 && monthOfBirth <= 12)
-            this.monthOfBirth = monthOfBirth;
-    }
-
-    public int getYearOfBirth() {
-        return yearOfBirth;
-    }
-
-    public void setYearOfBirth(int yearOfBirth) {
-        if (yearOfBirth > 1980 && yearOfBirth < 2004)
-            this.yearOfBirth = yearOfBirth;
     }
 
     public String getAddress() {
@@ -145,10 +122,19 @@ public class StudentConstructor {
     }
 
 
+    @Override
     public String toString() {
-        return "Student " + "id:" + id + ", name:" + name +  ", surname:" + surname +  ", patronymic:"
-                + patronymic  + ", day:" + datOfBirth + ", month:" + monthOfBirth + ", year:" + yearOfBirth + ", " +
-                "phoneNumber:+380" + phone + ", course:" + course + ", address:" + address +   ", faculty:"
-                + faculty +", group:" + group;
+        return "Student{" +
+                "id=" + id +
+                ", surname='" + surname + '\'' +
+                ", name='" + name + '\'' +
+                ", patronymic='" + patronymic + '\'' +
+                ", birthday=" + birthday +
+                ", address='" + address + '\'' +
+                ", phone=" + phone +
+                ", faculty='" + faculty + '\'' +
+                ", course=" + course +
+                ", group='" + group + '\'' +
+                '}';
     }
 }
